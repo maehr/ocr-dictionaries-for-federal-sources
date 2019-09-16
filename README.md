@@ -40,8 +40,8 @@ This project is maintained by [@maehr](https://github.com/maehr). Please underst
 
 | Type                   | Platforms                                                    |
 | ---------------------- | ------------------------------------------------------------ |
-| 🚨 **Bug Reports**      | [GitHub Issue Tracker](https://github.com/explosion/spaCy/issues) |
-| 🎁 **Feature Requests** | [GitHub Issue Tracker](https://github.com/explosion/spaCy/issues) |
+| 🚨 **Bug Reports**      | [GitHub Issue Tracker](https://github.com/maehr/ocr-dictionaries-for-federal-sources/issues) |
+| 🎁 **Feature Requests** | [GitHub Issue Tracker](https://github.com/maehr/ocr-dictionaries-for-federal-sources/issues) |
 
 ## Roadmap
 
@@ -55,8 +55,9 @@ Please make sure to update tests as appropriate.
 
 ## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
+[Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Public License](http://creativecommons.org/licenses/by-nc-sa/4.0/)
 
+## Ack
 
 https://opendata.swiss/en/dataset/official-compilation-of-federal-legislation-bs-as-1947-1998
 https://gitattributes.io/api/python
