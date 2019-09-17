@@ -157,6 +157,9 @@ crashlytics.properties
 crashlytics-build.properties
 fabric.properties
 
+# MacOS
+.DS_Store
+
 # Data
 AS-2017-02-21/
 RO-1948-1998/

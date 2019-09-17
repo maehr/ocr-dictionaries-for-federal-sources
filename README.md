@@ -61,3 +61,6 @@ Please make sure to update tests as appropriate.
 
 https://opendata.swiss/en/dataset/official-compilation-of-federal-legislation-bs-as-1947-1998
 https://gitattributes.io/api/python
+
+https://github.com/stopwords-iso/stopwords-iso
+https://github.com/hermitdave/FrequencyWords
