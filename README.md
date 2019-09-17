@@ -11,6 +11,7 @@ Dizionari per il riconoscimento dei testi OCR di fonti federali ([Archivio feder
 [![GitHub issues](https://img.shields.io/github/issues/maehr/ocr-dictionaries-for-federal-sources)](https://github.com/maehr/ocr-dictionaries-for-federal-sources/issues)
 [![GitHub forks](https://img.shields.io/github/forks/maehr/ocr-dictionaries-for-federal-sources)](https://github.com/maehr/ocr-dictionaries-for-federal-sources/network)
 [![GitHub stars](https://img.shields.io/github/stars/maehr/ocr-dictionaries-for-federal-sources)](https://github.com/maehr/ocr-dictionaries-for-federal-sources/stargazers)
+[![Requirements Status](https://requires.io/github/maehr/ocr-dictionaries-for-federal-sources/requirements.svg?branch=master)](https://requires.io/github/maehr/ocr-dictionaries-for-federal-sources/requirements/?branch=master)
 
 ## Usage
 
