@@ -11,7 +11,6 @@ Dizionari per il riconoscimento dei testi OCR di fonti federali ([Archivio feder
 [![GitHub issues](https://img.shields.io/github/issues/maehr/ocr-dictionaries-for-federal-sources)](https://github.com/maehr/ocr-dictionaries-for-federal-sources/issues)
 [![GitHub forks](https://img.shields.io/github/forks/maehr/ocr-dictionaries-for-federal-sources)](https://github.com/maehr/ocr-dictionaries-for-federal-sources/network)
 [![GitHub stars](https://img.shields.io/github/stars/maehr/ocr-dictionaries-for-federal-sources)](https://github.com/maehr/ocr-dictionaries-for-federal-sources/stargazers)
-[![GitHub license](https://img.shields.io/github/license/maehr/ocr-dictionaries-for-federal-sources)](https://github.com/maehr/ocr-dictionaries-for-federal-sources)
 
 ## Usage
 
@@ -89,9 +88,10 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 * [.gitattributes](https://gitattributes.io)
 
   Create .gitattributes file for your project.
-  
+
 * [Jupyter](https://jupyter.org/)
 
   Project Jupyter exists to develop open-source software, open-standards, and services for interactive computing across dozens of programming languages.
 * [tika-python](https://github.com/chrismattmann/tika-python)
+
   A Python port of the Apache Tika library that makes Tika available using the Tika REST Server.
