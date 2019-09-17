@@ -1,10 +1,27 @@
 # ocr dictionaries for federal sources
 
-Dictionaries for OCR text recognition of federal sources in German, French and Italian language.
+Dictionaries for OCR text recognition of federal sources ([Swiss Federal Archives](https://www.bar.admin.ch)) in [German](https://raw.githubusercontent.com/maehr/ocr-dictionaries-for-federal-sources/master/de_federal_dic.txt), [French](https://raw.githubusercontent.com/maehr/ocr-dictionaries-for-federal-sources/master/fr_federal_dic.txt) and [Italian](https://raw.githubusercontent.com/maehr/ocr-dictionaries-for-federal-sources/master/it_federal_dic.txt) language.
 
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+Wörterbücher zur OCR-Texterkennung von Bundesquellen ([Schweizerisches Bundesarchiv](https://www.bar.admin.ch)) in [deutscher](https://raw.githubusercontent.com/maehr/ocr-dictionaries-for-federal-sources/master/de_federal_dic.txt), [französischer](https://raw.githubusercontent.com/maehr/ocr-dictionaries-for-federal-sources/master/fr_federal_dic.txt) und [italienischer](https://raw.githubusercontent.com/maehr/ocr-dictionaries-for-federal-sources/master/it_federal_dic.txt) Sprache.
 
-<!--On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.-->
+Dictionnaires pour la reconnaissance de textes OCR de sources fédérales ([Archives fédérales suisses](https://www.bar.admin.ch)) en [allemand](https://raw.githubusercontent.com/maehr/ocr-dictionaries-for-federal-sources/master/de_federal_dic.txt), [français](https://raw.githubusercontent.com/maehr/ocr-dictionaries-for-federal-sources/master/fr_federal_dic.txt) et [italien](https://raw.githubusercontent.com/maehr/ocr-dictionaries-for-federal-sources/master/it_federal_dic.txt).
+
+Dizionari per il riconoscimento dei testi OCR di fonti federali ([Archivio federale svizzero](https://www.bar.admin.ch)) in lingua [tedesca](https://raw.githubusercontent.com/maehr/ocr-dictionaries-for-federal-sources/master/de_federal_dic.txt), [francese](https://raw.githubusercontent.com/maehr/ocr-dictionaries-for-federal-sources/master/fr_federal_dic.txt) e [italiana](https://raw.githubusercontent.com/maehr/ocr-dictionaries-for-federal-sources/master/it_federal_dic.txt).
+
+[![GitHub issues](https://img.shields.io/github/issues/maehr/ocr-dictionaries-for-federal-sources)](https://github.com/maehr/ocr-dictionaries-for-federal-sources/issues)
+[![GitHub forks](https://img.shields.io/github/forks/maehr/ocr-dictionaries-for-federal-sources)](https://github.com/maehr/ocr-dictionaries-for-federal-sources/network)
+[![GitHub stars](https://img.shields.io/github/stars/maehr/ocr-dictionaries-for-federal-sources)](https://github.com/maehr/ocr-dictionaries-for-federal-sources/stargazers)
+[![GitHub license](https://img.shields.io/github/license/maehr/ocr-dictionaries-for-federal-sources)](https://github.com/maehr/ocr-dictionaries-for-federal-sources)
+
+## Usage
+
+Download one of the ready made dictionaries:
+
+* [German](https://raw.githubusercontent.com/maehr/ocr-dictionaries-for-federal-sources/master/de_federal_dic.txt)
+* [French](https://raw.githubusercontent.com/maehr/ocr-dictionaries-for-federal-sources/master/fr_federal_dic.txt)
+* [Italian](https://raw.githubusercontent.com/maehr/ocr-dictionaries-for-federal-sources/master/it_federal_dic.txt)
+
+Or build them yourself (See [Installation](https://github.com/maehr/ocr-dictionaries-for-federal-sources#installation)).
 
 ## Installation
 
@@ -13,8 +30,6 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install.
 ```bash
 pip install -r requirements.txt
 ```
-
-## Usage
 
 Download and extract the collections from 1948 till 1998 in German, French and Italian from [Official Compilation of Federal Legislation (BS / AS) 1948-1998](https://opendata.swiss/en/dataset/official-compilation-of-federal-legislation-bs-as-1947-1998) using [wget](https://www.gnu.org/software/wget/) and [unzip](https://linux.die.net/man/1/unzip).
 
@@ -28,7 +43,7 @@ unzip RU-1948-1998.zip -d RU-1948-1998
 rm *.zip
 ```
 
-Start [Jupyter](https://jupyter.org) and open `build-dictionaries.ipynb`.
+Start [Jupyter](https://jupyter.org), open `build-dictionaries.ipynb` and run the notebook.
 
 ```bash
 jupyter notebook
@@ -45,22 +60,38 @@ This project is maintained by [@maehr](https://github.com/maehr). Please underst
 
 ## Roadmap
 
-If you have ideas for releases in the future, it is a good idea to list them in the README.
+No changes are currently planned.
 
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-Please make sure to update tests as appropriate.
-
 ## License
 
 [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Public License](http://creativecommons.org/licenses/by-nc-sa/4.0/)
 
-## Ack
+## Data sources
 
-https://opendata.swiss/en/dataset/official-compilation-of-federal-legislation-bs-as-1947-1998
-https://gitattributes.io/api/python
+* [Official Compilation of Federal Legislation (BS / AS) 1948-1998](https://opendata.swiss/en/dataset/official-compilation-of-federal-legislation-bs-as-1947-1998)
 
-https://github.com/stopwords-iso/stopwords-iso
-https://github.com/hermitdave/FrequencyWords
+  The data comprise the Official Compilation (AS) including the Revised Compilation (BS). The AS is the organ of publication for enactments of the Confederation that have entered into force: the Federal Constitution, federal acts, federal decrees, ordinances, international treaties and agreements between the Confederation and the cantons.
+
+* [Stopwords ISO](https://github.com/stopwords-iso/stopwords-iso)
+
+  The most comprehensive collection of stopwords for multiple languages.
+
+* [FrequencyWords](https://github.com/hermitdave/FrequencyWords)
+
+  Repository for Frequency Word List Generator and processed files
+
+## Tools
+
+* [.gitattributes](https://gitattributes.io)
+
+  Create .gitattributes file for your project.
+  
+* [Jupyter](https://jupyter.org/)
+
+  Project Jupyter exists to develop open-source software, open-standards, and services for interactive computing across dozens of programming languages.
+* [tika-python](https://github.com/chrismattmann/tika-python)
+  A Python port of the Apache Tika library that makes Tika available using the Tika REST Server.
