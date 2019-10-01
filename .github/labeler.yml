@@ -1,0 +1,15 @@
+dictionaries:
+- dictionaries/*
+- de_federal_dic.txt
+- fr_federal_dic.txt
+- it_federal_dic.txt
+- build-dictionaries.ipynb
+- requirements.txt
+
+docs:
+- .github/*
+- CODE_OF_CONDUCT.md
+- LICENSE.md
+- README.md
+- .gitattributes
+- .gitignore
