@@ -12,6 +12,7 @@ Dizionari per il riconoscimento dei testi OCR di fonti federali ([Archivio feder
 [![GitHub forks](https://img.shields.io/github/forks/maehr/ocr-dictionaries-for-federal-sources)](https://github.com/maehr/ocr-dictionaries-for-federal-sources/network)
 [![GitHub stars](https://img.shields.io/github/stars/maehr/ocr-dictionaries-for-federal-sources)](https://github.com/maehr/ocr-dictionaries-for-federal-sources/stargazers)
 [![Requirements Status](https://requires.io/github/maehr/ocr-dictionaries-for-federal-sources/requirements.svg?branch=master)](https://requires.io/github/maehr/ocr-dictionaries-for-federal-sources/requirements/?branch=master)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fmaehr%2Focr-dictionaries-for-federal-sources.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fmaehr%2Focr-dictionaries-for-federal-sources?ref=badge_shield)
 
 ## Usage
 
@@ -69,6 +70,9 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 ## License
 
 [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Public License](http://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fmaehr%2Focr-dictionaries-for-federal-sources.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fmaehr%2Focr-dictionaries-for-federal-sources?ref=badge_large)
 
 ## Data sources
 
