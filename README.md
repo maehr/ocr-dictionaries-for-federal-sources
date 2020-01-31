@@ -26,7 +26,9 @@ Or build them yourself (See [Installation](https://github.com/maehr/ocr-dictiona
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install.
+Install [Java 8](https://www.java.com/download/) or higher.
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install [Jupyter](https://jupyter.org/).
 
 ```bash
 pip install -r requirements.txt
@@ -41,7 +43,17 @@ wget -O RO-1948-1998.zip https://bar-files.opendata.swiss/owncloud/index.php/s/C
 unzip RO-1948-1998.zip -d RO-1948-1998
 wget -O RU-1948-1998.zip https://bar-files.opendata.swiss/owncloud/index.php/s/zZNblAXVxGELpaj
 unzip RU-1948-1998.zip -d RU-1948-1998
-rm *.zip
+wget -O tika-app-1.23.jar http://mirror.easyname.ch/apache/tika/tika-app-1.23.jar
+java -jar tika-app-1.23.jar -T -i AS-2017-02-21 -o tmp
+rm -Rf AS-2017-02-21
+mv tmp AS-1948-1998
+java -jar tika-app-1.23.jar -T -i RO-1948-1998 -o tmp
+rm -Rf RO-1948-1998
+mv tmp RO-1948-1998
+java -jar tika-app-1.23.jar -T -i RU-1948-1998 -o tmp
+rm -Rf RU-1948-1998
+mv tmp RU-1948-1998
+rm *.zip *.jar
 ```
 
 Start [Jupyter](https://jupyter.org), open `build-dictionaries.ipynb` and run the notebook.
@@ -88,13 +100,10 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 ## Tools
 
-* [.gitattributes](https://gitattributes.io)
-
-  Create .gitattributes file for your project.
-
 * [Jupyter](https://jupyter.org/)
 
   Project Jupyter exists to develop open-source software, open-standards, and services for interactive computing across dozens of programming languages.
-* [tika-python](https://github.com/chrismattmann/tika-python)
 
-  A Python port of the Apache Tika library that makes Tika available using the Tika REST Server.
+* [Apache Tika](https://tika.apache.org/)
+
+  Apache Tika is a content detection and analysis framework, written in Java, stewarded at the Apache Software Foundation. It detects and extracts metadata and text from over a thousand different file types, and as well as providing a Java library, has server and command-line editions suitable for use from other programming languages.
