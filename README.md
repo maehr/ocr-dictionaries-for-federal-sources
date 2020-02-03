@@ -37,23 +37,7 @@ pip install -r requirements.txt
 Download and extract the collections from 1948 till 1998 in German, French and Italian from [Official Compilation of Federal Legislation (BS / AS) 1948-1998](https://opendata.swiss/en/dataset/official-compilation-of-federal-legislation-bs-as-1947-1998) using [wget](https://www.gnu.org/software/wget/) and [unzip](https://linux.die.net/man/1/unzip).
 
 ```bash
-wget -O AS-1948-1998.zip https://bar-files.opendata.swiss/owncloud/index.php/s/9CqLuW1DSpA6IYU
-unzip AS-1948-1998.zip
-wget -O RO-1948-1998.zip https://bar-files.opendata.swiss/owncloud/index.php/s/CyQCy4KjfaCVqNe
-unzip RO-1948-1998.zip -d RO-1948-1998
-wget -O RU-1948-1998.zip https://bar-files.opendata.swiss/owncloud/index.php/s/zZNblAXVxGELpaj
-unzip RU-1948-1998.zip -d RU-1948-1998
-wget -O tika-app-1.23.jar http://mirror.easyname.ch/apache/tika/tika-app-1.23.jar
-java -jar tika-app-1.23.jar -T -i AS-2017-02-21 -o tmp
-rm -Rf AS-2017-02-21
-mv tmp AS-1948-1998
-java -jar tika-app-1.23.jar -T -i RO-1948-1998 -o tmp
-rm -Rf RO-1948-1998
-mv tmp RO-1948-1998
-java -jar tika-app-1.23.jar -T -i RU-1948-1998 -o tmp
-rm -Rf RU-1948-1998
-mv tmp RU-1948-1998
-rm *.zip *.jar
+bash build_dataset.sh
 ```
 
 Start [Jupyter](https://jupyter.org), open `build-dictionaries.ipynb` and run the notebook.
