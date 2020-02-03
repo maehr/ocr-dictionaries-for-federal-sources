@@ -12,6 +12,7 @@ Dizionari per il riconoscimento dei testi OCR di fonti federali ([Archivio feder
 [![GitHub forks](https://img.shields.io/github/forks/maehr/ocr-dictionaries-for-federal-sources)](https://github.com/maehr/ocr-dictionaries-for-federal-sources/network)
 [![GitHub stars](https://img.shields.io/github/stars/maehr/ocr-dictionaries-for-federal-sources)](https://github.com/maehr/ocr-dictionaries-for-federal-sources/stargazers)
 [![Requirements Status](https://requires.io/github/maehr/ocr-dictionaries-for-federal-sources/requirements.svg?branch=master)](https://requires.io/github/maehr/ocr-dictionaries-for-federal-sources/requirements/?branch=master)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmaehr%2Focr-dictionaries-for-federal-sources.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fmaehr%2Focr-dictionaries-for-federal-sources?ref=badge_shield)
 
 ## Usage
 
@@ -25,7 +26,9 @@ Or build them yourself (See [Installation](https://github.com/maehr/ocr-dictiona
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install.
+Install [Java 8](https://www.java.com/download/) or higher.
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install [Jupyter](https://jupyter.org/).
 
 ```bash
 pip install -r requirements.txt
@@ -34,13 +37,7 @@ pip install -r requirements.txt
 Download and extract the collections from 1948 till 1998 in German, French and Italian from [Official Compilation of Federal Legislation (BS / AS) 1948-1998](https://opendata.swiss/en/dataset/official-compilation-of-federal-legislation-bs-as-1947-1998) using [wget](https://www.gnu.org/software/wget/) and [unzip](https://linux.die.net/man/1/unzip).
 
 ```bash
-wget -O AS-1948-1998.zip https://bar-files.opendata.swiss/owncloud/index.php/s/9CqLuW1DSpA6IYU
-unzip AS-1948-1998.zip
-wget -O RO-1948-1998.zip https://bar-files.opendata.swiss/owncloud/index.php/s/CyQCy4KjfaCVqNe
-unzip RO-1948-1998.zip -d RO-1948-1998
-wget -O RU-1948-1998.zip https://bar-files.opendata.swiss/owncloud/index.php/s/zZNblAXVxGELpaj
-unzip RU-1948-1998.zip -d RU-1948-1998
-rm *.zip
+bash build_dataset.sh
 ```
 
 Start [Jupyter](https://jupyter.org), open `build-dictionaries.ipynb` and run the notebook.
@@ -57,6 +54,7 @@ This project is maintained by [@maehr](https://github.com/maehr). Please underst
 | ---------------------- | ------------------------------------------------------------ |
 | 🚨 **Bug Reports**      | [GitHub Issue Tracker](https://github.com/maehr/ocr-dictionaries-for-federal-sources/issues) |
 | 🎁 **Feature Requests** | [GitHub Issue Tracker](https://github.com/maehr/ocr-dictionaries-for-federal-sources/issues) |
+| 🛡 **Report a security vulnerability**      | [GitHub Issue Tracker](https://github.com/maehr/ocr-dictionaries-for-federal-sources/issues) |
 
 ## Roadmap
 
@@ -86,13 +84,10 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 ## Tools
 
-* [.gitattributes](https://gitattributes.io)
-
-  Create .gitattributes file for your project.
-
 * [Jupyter](https://jupyter.org/)
 
   Project Jupyter exists to develop open-source software, open-standards, and services for interactive computing across dozens of programming languages.
-* [tika-python](https://github.com/chrismattmann/tika-python)
 
-  A Python port of the Apache Tika library that makes Tika available using the Tika REST Server.
+* [Apache Tika](https://tika.apache.org/)
+
+  Apache Tika is a content detection and analysis framework, written in Java, stewarded at the Apache Software Foundation. It detects and extracts metadata and text from over a thousand different file types, and as well as providing a Java library, has server and command-line editions suitable for use from other programming languages.
